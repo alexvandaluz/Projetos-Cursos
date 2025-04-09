@@ -1,0 +1,150 @@
+body{
+    font-family: mukta, sans-serif;/*fonte que será usada no site*/
+    font-size: 16px; /*16px é o tamanho padrão dos navegadores, mas vai se tem um usuario que usa um navegador diferente, então é sempre bom referenciar*/
+    margin:0;
+    padding: 0;/*padding e margin 0 para podermos mudar da maneira que quisermos*/
+    letter-spacing: 0.5px; /* espaçamento entre as letras*/
+}
+
+.content{
+    max-width: 900px; /*para nao deixar ficar ocupando toda a tela*/
+    margin: 0 auto; /*para centralizar o conteudo na tela*/
+    padding: 32px; /*para nao deixar a borda encostar na beirada do site*/
+
+}
+
+.content h3{
+    text-transform: capitalize;/*faz com que a primeira letra seja maiuscula*/
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: bitter, serif; /*todos os titulos terão esta fonte*/
+}
+
+h1{
+    font-size: 80px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    margin:0;/*quando colocou heigt em 100vh ficou uma parte branca na parte de cima, foi para tirar a parte branca*/
+    letter-spacing: -1.5px;
+}
+
+h2{
+    font-size: 50px;
+    font-weight: 500;/*se apenas colocar bold os navegadores entendem como 700, se quiser colocar normal bold ao invez de bold se coloca 500 nao 700*/
+    letter-spacing: -0.5px;
+}
+
+
+h3{
+    font-size: 38px;
+    font-weight: 500;/*se apenas colocar bold os navegadores entendem como 700, se quiser colocar normal bold ao invez de bold se coloca 500 nao 700*/
+    letter-spacing:0px;
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 30px;
+    font-weight: 500;/*se apenas colocar bold os navegadores entendem como 700, se quiser colocar normal bold ao invez de bold se coloca 500 nao 700*/
+    letter-spacing:0.25px;
+}
+h5{
+    font-size: 24px;
+    font-weight: 500;/*se apenas colocar bold os navegadores entendem como 700, se quiser colocar normal bold ao invez de bold se coloca 500 nao 700*/
+    letter-spacing:0.25px;
+}
+
+h6{
+    font-size: 20px;
+    font-weight: 500;/*se apenas colocar bold os navegadores entendem como 700, se quiser colocar normal bold ao invez de bold se coloca 500 nao 700*/
+    letter-spacing:0.25px;
+}
+.info{
+    text-align: center; /*para centralizar o paragrafo*/
+    text-transform: uppercase; /*deixar este paragrafo todo em maiusculo */
+    font-family: bitter, serif;
+    font-weight: bold;/*deixar a fonte em modelo negrito*/
+    font-size:14px;
+    letter-spacing: 1.5px;
+}
+
+code{
+    color:#e95400;
+    font-weight: bold;
+}
+
+.hero{
+    background-color: #863ae8;
+    height: 100vh;/*para deixar a tela inteira como roxa na tela inicial colocou que a altura pega 100% do tamanho do monitor*/
+    color: white;
+    text-align: center;/* se centralizou nele mesmo*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero hr{
+    width: 75%;
+}
+
+.hero h1, .hero p{
+    width: 75%;/*para deixar responsivo, se for diminuir a tela, ele acompanha deixando com 75% da tela*/
+    max-width: 900px;/*para deixar um limite aos 75%*/
+
+}
+
+.headline{
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0px;
+    margin: 40px 0; /* 40px para cima e para baixo e 0 para esquerda e direita*/
+    font-size: 18px;
+}
+
+.headline span{
+    color:#e95400;
+}
+
+.quote{
+    font-style: italic;/*deixar o texto em italico*/
+    font-size: 14px;
+    border-left:2px solid #e95400;/*deixar a linha do lado do texto*/
+    padding-left: 16px;/*para afastar um pouco a linha do lado do texto*/
+    margin:32px 0 32px 32px;
+
+}
+
+.quote cite{
+    display: block;/*para ele parar de ser tratado como linha e ser tratado como bloco para ir para a linha de baixo*/
+    font-weight: bold;
+    margin-left: 20px;/*dar um espaçamento maior*/
+}
+
+footer{
+    background-color: #863ae8;
+}
+
+footer ul{
+    list-style: none; /* tirar as bolinhas da lista*/
+    margin: 0 auto; /* não da certo pois o ul ocupa 100% do tamanho da pagina, não tem espaço para ele se centralizar*/
+    width: 100%;
+    max-width: 900px;
+    text-align: center; /* colocando o tamanho em 100% e o tamanho max de 900px agora ele tem espaço para transitar, entao basta deixar eles no centro com o margin 0 auto e depois centralizar ele, nele mesmo com text-align center*/
+    padding: 28px 0;/*colocando o tamanho no footer não estava funcionando, entao colocou um padding em um elemento dentro do footer para expandir ele */
+}
+
+footer ul li{
+    display: inline;/* nao é mais tratado como bloco, agora estão um do lado do outro*/
+    padding: 0 16px;
+}
+
+footer ul li a {
+    text-decoration: none;/* tirar a linha em baixo */
+    color:white;
+    
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
