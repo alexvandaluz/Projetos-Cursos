@@ -42,3 +42,4 @@ let nomes = ['João', 'Lucas', 'Flavio', 'Fernando'];
 nomes.forEach(function(nome) {
     console.log(`Olá, ${nome}!`);
 });
+
